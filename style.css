@@ -206,22 +206,69 @@ nav {
 }
 
 .card-proyecto {
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  width: 400px; /* tamaño fijo horizontal */
-  height: 400px; /* tamaño fijo vertical (ajústalo a tu gusto) */
+  width: 400px;
+  height: 400px;
   perspective: 1000px;
   margin: 20px;
-  transition: transform 0.3s ease;
+  position: relative; /* importante para los hijos absolutos */
+   background-color: #fff; /* Cambia a blanco para aislar */
+   
 }
 
+.card-inner {
+  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
 
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* oculta la cara trasera cuando está girada */
+  -webkit-backface-visibility: hidden;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  transform: rotateY(180deg) ;
+}
+
+/* Imagen dentro de la cara frontal */
+.card-front img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Título dentro de la cara frontal */
+.card-front h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
 
 .card-proyecto:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  
 }
 
 .card-proyecto img {
