@@ -1,0 +1,407 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+h3 {
+  font-size: 15px;
+  color: #4a90e2; /* azul suave */
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Centra todo el contenido del nav */
+  align-items: center;
+  padding: 15px;
+  gap: 80px; /* Espacio entre nombre y menú */
+}
+
+.nombre {
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+  padding-bottom: 6px;
+  margin: 0; /* Quita márgenes para que no desalineen */
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  margin: 0; /* Quita margin-right para que no desplace */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 13px;
+  transition: all 0.3s;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.inicio {
+  max-width: 1200px; /* ancho máximo que puede ocupar */
+  margin: 0 auto; /* lo centra horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 5vh 5vw;
+  gap: -29rem;
+}
+
+/* BLOQUE IZQUIERDO: Texto */
+.basicInfo,
+.retrato {
+  flex: 1 1 300px; /* flex-grow, flex-shrink, flex-basis */
+  max-width: 600px;
+  min-width: 250px;
+  min-width: 0; /* evita desbordes en .basicInfo */
+}
+
+.basicInfo {
+  flex: 1;
+}
+
+.retrato {
+  flex-shrink: 0; /* que no se reduzca a cero */
+  max-width: 300px;
+  width: 25%;
+}
+
+.retrato img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.basicInfo h1 {
+  font-weight: 625;
+  font-size: clamp(20px, 2.5vw, 32px);
+  margin-bottom: 20px;
+}
+
+.nombre-azul {
+  color: #4a90e2;
+}
+
+#btn-CV {
+  background-color: #5dade2 !important;
+  color: white !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 40px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: none !important;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+#btn-CV:hover {
+  background-color: #4178c0 !important;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.icons a i {
+  font-size: 2.5rem;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.icons a i:hover {
+  color: #5dade2;
+}
+
+.seccion {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.titulo-seccion {
+  display: inline-block; /* que ocupe solo lo justo */
+  border-bottom: 3px solid #4a90e2;
+  padding-bottom: 5px;
+  font-size: 18px;
+  color: #4a90e2;
+  font-weight: 650;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.seccion .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bloque-presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* espacio entre imagen y texto */
+  flex-wrap: wrap; /* para adaptarse en móviles */
+  margin-top: 30px;
+}
+
+.retrato-presentacion img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%; /* hace que sea redonda */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contenedor-presentacion {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  border-radius: 10px;
+  max-width: 550px;
+  text-align: center;
+}
+
+.nombrePresentacion {
+  font-size: 17px;
+  font-weight: 625;
+}
+
+.sobre-mi p {
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.contenedor-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+  gap: 40px 300px; /* 40px vertical, 300px horizontal */
+  place-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-proyecto {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 400px; /* tamaño fijo horizontal */
+  height: 400px; /* tamaño fijo vertical (ajústalo a tu gusto) */
+  perspective: 1000px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+
+.card-proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-proyecto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-proyecto h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+/* efecto cambio color iconos proyectos */
+.iconos a,
+.iconos a i {
+  color: #333;
+  transition: color 0.6s ease;
+  will-change: color;
+}
+
+.iconos a:hover,
+.iconos a:hover i {
+  color: #5dade2;
+}
+
+.iconos a {
+  pointer-events: auto;
+}
+
+/* efecto aparicion seccion */
+
+/* Oculta elementos inicialmente */
+.oculto {
+  opacity: 0;
+  transform: translateY(-30px); /* empieza un poco arriba */
+  transition: opacity 2s ease, transform 2s ease;
+  pointer-events: none; /* para que no se pueda clicar mientras está oculto */
+}
+
+/* Cuando entra en pantalla */
+.mostrar {
+  opacity: 1;
+  transform: translateY(0); /* vuelve a su posición original */
+  pointer-events: auto;
+}
+
+.iconos-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.icono {
+  flex: 0 0 25%; /* ancho fijo del 25% */
+  max-width: 25%; /* evitar que crezca */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.icono img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease;
+}
+
+.icono img:hover {
+  transform: translateY(-10px);
+}
+
+.contacto {
+  font-weight: 625;
+  font-size: 30px;
+  margin-top: 250px;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #1e21dd;
+  color: rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+.contenedor-iconos {
+  display: flex;
+  gap: 30px; /* espacio entre iconos */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 400px;
+}
+
+.contenedor-iconos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Tamaño del círculo */
+  height: 40px;
+  border: 2px solid #000000;
+  border-radius: 50%; /* círculo */
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contenedor-iconos a:hover {
+  background-color: #4a90e2; /* Fondo azul al hacer hover */
+  color: white; /* Icono blanco al hacer hover */
+  cursor: pointer;
+}
+
+footer {
+  background-color: #fafafa;
+  color: #555;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer p {
+  margin: 0 0 8px 0;
+}
+
+.footer-icons a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #1e21dd; /* azul corporativo */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .inicio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .basicInfo, .retrato {
+    width: 90%;
+    text-align: center;
+  }
+
+  .basicInfo h1,
+  #btn-CV,
+  .icons {
+    margin-left: 0;
+  }
+
+  .retrato img {
+    max-width: 80vw;
+  }
+}
