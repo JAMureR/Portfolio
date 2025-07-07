@@ -55,3 +55,12 @@ document.querySelectorAll('.card-proyecto').forEach(card => {
       inner.classList.toggle('flipped');
     });
   });
+
+
+
+// Evita que el clic en los enlaces dispare el giro
+document.querySelectorAll('.web-link').forEach(link => {
+  link.addEventListener('click', e => {
+    e.stopPropagation();
+  });
+});

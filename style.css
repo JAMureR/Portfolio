@@ -9,6 +9,7 @@ h3 {
 }
 
 nav {
+   
   display: flex;
   justify-content: center; /* Centra todo el contenido del nav */
   align-items: center;
@@ -25,6 +26,7 @@ nav {
 }
 
 .menu {
+  
   display: flex;
   gap: 50px;
   margin: 0; /* Quita margin-right para que no desplace */
@@ -430,6 +432,36 @@ footer p {
   color: #1e21dd; /* azul corporativo */
   cursor: pointer;
 }
+
+.card-tecnologias {
+ display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.icono-targeta{
+  flex: 0 0 calc(33.33% - 10px); /* 3 por fila, restando el gap */
+  flex: 0 0 25%;
+  max-width: 25%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.icono-targeta img {
+  max-height: 70px; /* controla el tamaño de los iconos */
+ 
+}
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .inicio {

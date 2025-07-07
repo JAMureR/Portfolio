@@ -21,15 +21,16 @@
         <div class="nombre">Javier Mure</div>
 
         <div class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mí</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobremi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#skills">Skills</a>
+            <a href="#contacto">Contacto</a>
         </div>
 
     </nav>
 
-    <div class="inicio">
+    <div class="inicio" id="inicio">
         <div class="basicInfo">
             <h1>
                 Hola,<br>
@@ -38,23 +39,24 @@
             </h1>
             <a id="btn-CV" class="btn btn-primary btn-sm" href="">Ver CV</a>
             <div class="icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/javier-mure-ruiz-ba8988330/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/JAMureR"><i class="fab fa-github"></i></a>
             </div>
         </div>
 
         <div class="retrato">
-            <img src="images/yo.png" alt="Retrato">
+            <img src="images/yo1.png" alt="Retrato">
         </div>
     </div>
 
-    <section class="seccion">
+    <section class="seccion" id="sobremi">
         <h2 class="titulo-seccion">Sobre mí</h2>
         <div class="container">
 
             <div class="bloque-presentacion">
                 <div class="retrato-presentacion">
-                    <img src="images/yo.png" alt="Retrato-presentacion">
+                    <img src="images/yo2_def.png" alt="Retrato-presentacion">
                 </div>
 
                 <div class="contenedor-presentacion">
@@ -76,60 +78,91 @@
 
             <!-- Proyecto 1 -->
             <div class="card-proyecto">
-                <div Class="card-inner">
+                <div class="card-inner">
                     <div Class="card-front">
-                        <img src="ruta/portfolio.png" alt="portfolio" />
+                        <img src="images/portfolio.png" alt="portfolio" />
                         <h3>Mi Portfolio</h3>
                         <div class="iconos">
-                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/JAMureR/Portfolio" class="web-link"><i
+                                    class="fab fa-github"></i></a>
                             <a href="#"><i class="fas fa-globe"></i></a>
                         </div>
                     </div>
                     <!-- Cara trasera -->
                     <div class="card-back">
-                        <div class="iconos">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fas fa-globe"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <h3>Tecnologias:</h3>
+                        <div class="card-tecnologias">
 
-            <!-- Proyecto 1 -->
-            <div class="card-proyecto">
-                <div Class="card-inner">
-                    <div Class="card-front">
-                        <img src="images/lifecapture.png" alt="lifecapture" />
-                        <h3>Red social<br>
-                        LifeCapture</h3>
+                            <div class="icono-targeta"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            </div>
+                            <div class="icono-targeta"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                            </div>
+                            <div class="icono-targeta"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                            </div>
+                        </div>
                         <div class="iconos">
-                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/JAMureR/Portfolio" class="web-link"><i
+                                    class="fab fa-github"></i></a>
                             <a href="#"><i class="fas fa-globe"></i></a>
                         </div>
-                    </div>
-                    <!-- Cara trasera -->
-                    <div class="card-back">
-                        <div class="iconos">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fas fa-globe"></i></a>
-                        </div>
+
                     </div>
                 </div>
             </div>
 
             <!-- Proyecto 2 -->
             <div class="card-proyecto">
-                <img src="images/lifeCapture.png" alt="lifeCapture" />
+                <div class="card-inner">
+                    <div Class="card-front">
+                        <img src="images/lifecapture.png" alt="lifecapture" />
+                        <h3>Red social<br>
+                            LifeCapture</h3>
 
-                <h3>Red social<br>
-                    LifeCapture</h3>
-                <div class="iconos">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fas fa-globe"></i></a>
+                        <div class="iconos">
+                            <a href="https://github.com/JAMureR/LifeCapture" class="web-link"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <!-- Cara trasera -->
+                    <div class="card-back">
+                        <h3>Tecnologias:</h3>
+                        <div class="card-tecnologias">
+
+                            <div class="icono-targeta"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                            </div>
+                            <div class="icono-targeta"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
+                            </div>
+                            <div class="icono-targeta"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                            </div>
+                            <div class="icono-targeta"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                            </div>
+                            <div class="icono-targeta"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                            </div>
+
+                        </div>
+                        <div class="iconos">
+                            <a href="https://github.com/JAMureR/LifeCapture" class="web-link"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
                 </div>
+
 
             </div>
         </div>
+        </div>
+
+
     </section>
 
     <section id="skills" class="seccion oculto">
@@ -207,13 +240,13 @@
 
         <div class="contenedor-contacto">
             <h1 class="contacto">Contacta conmigo</h1>
-            <a href="#" class="btn">Enviame un mail <i class="fa-solid fa-envelope"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=javiermuredev@gmail.com" target="_blank" rel="noopener noreferrer" class="btn">Enviame un mail <i class="fa-solid fa-envelope"></i></a>
 
             <div class="contenedor-iconos">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="mailto:jmure.sat@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/javier-mure-ruiz-ba8988330/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/JAMureR"><i class="fab fa-github"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=javiermuredev@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/34638001027" target="_blank" class="whatsapp-link"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
 
 
@@ -225,7 +258,7 @@
         <p>© 2025 Javier Mure Ruiz. Todos los derechos reservados.</p>
         <div class="footer-dato">
             <i class="fa-solid fa-envelope"></i>
-            <span>jmure.sat@gmail.com</span>
+            <span>javiermuredev@gmail.com</span>
         </div>
         <div class="footer-dato">
             <i class="fa-solid fa-phone"></i>
