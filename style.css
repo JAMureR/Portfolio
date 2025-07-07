@@ -15,6 +15,7 @@ nav {
   align-items: center;
   padding: 15px;
   gap: 80px; /* Espacio entre nombre y menú */
+  flex-wrap: wrap; /* Permite que los elementos hagan salto de línea si no caben */
 }
 
 .nombre {
@@ -65,7 +66,7 @@ nav {
   justify-content: space-between;
   flex-wrap: nowrap;
   padding: 5vh 5vw;
-  gap: -29rem;
+  
 }
 
 /* BLOQUE IZQUIERDO: Texto */
