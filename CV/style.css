@@ -1,0 +1,159 @@
+/* Restablecer márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Perfil */
+#perfil {
+    padding: 30px 0;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+#perfil h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#perfil p {
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+#btn-CV {
+  background-color: #5dade2 !important;
+  color: white !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 40px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: none !important;
+  text-align: center;
+  display: inline-block;
+  width: auto;           
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+#btn-CV:hover {
+  background-color: #4178c0 !important;
+}
+
+/* Sección de Trabajo y Educación */
+section {
+    padding: 40px 0;
+}
+section h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+ul.lista-sin-estilo {
+    margin-left: 20px;
+}
+ul.lista-sin-estilo li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ul.lista-sin-estilo h5 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+ul.lista-sin-estilo p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Habilidades */
+#habilidades {
+    background-color: #e9ecef;
+    padding: 40px 0;
+}
+#habilidades .insignia {
+    margin: 5px;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+#habilidades .insignia:hover {
+    background-color: #343a40;
+}
+
+/* Proyectos */
+#proyectos {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+#proyectos p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+#contacto a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+#contacto a:hover {
+    border-color: #fff;
+}
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p {
+    font-size: 1em;
+}
