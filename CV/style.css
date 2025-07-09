@@ -68,6 +68,12 @@ header p {
   background-color: #4178c0 !important;
 }
 
+.contenedor-blanco {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Sección de Trabajo y Educación */
 section {
     padding: 40px 0;
